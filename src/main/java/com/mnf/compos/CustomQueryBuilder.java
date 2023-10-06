@@ -1,15 +1,11 @@
 package com.mnf.compos;
 
 import com.mnf.compos.dto.*;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.NoResultException;
-import jakarta.persistence.TypedQuery;
-import jakarta.persistence.criteria.*;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import jakarta.persistence.*;
+import jakarta.persistence.criteria.*;
+import java.util.*;
 
 @Component
 public class CustomQueryBuilder<T> {
